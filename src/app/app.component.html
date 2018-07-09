@@ -1,20 +1,126 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<app-header></app-header>
+<app-promo></app-promo>
+<app-features></app-features>
+
+
+
+
+<!-- ******FEATURES****** -->
+
+<app-how></app-how>
+<!-- ******HOW****** -->
+
+<app-faq></app-faq>
+<!-- ******FAQ****** -->
+
+<app-story></app-story>
+<!-- ******STORY****** -->
+
+<app-testamonials></app-testamonials>
+<!-- ******TESTIMONIALS****** -->
+
+<app-pricing></app-pricing>
+<!-- ******Pricing****** -->
+
+<app-ajoutrequest></app-ajoutrequest>
+<!-- ******CONTACT****** -->
+
+<app-footer></app-footer>
+<!-- ******FOOTER****** -->
+<!--<footer class="footer">-->
+<!--<div class="container">-->
+<!--<small class="copyright pull-left">Copyright &copy; <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>-->
+<!--<ul class="links list-inline">-->
+<!--<li class="list-inline-item"><a href="#">Terms</a></li>-->
+<!--<li class="list-inline-item"><a href="#">Privacy</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</footer>&lt;!&ndash;//footer&ndash;&gt;-->
+
+<!-- Feature Modal -->
+<div class="modal modal-feature" id="feature-modal-1" tabindex="-1" role="dialog" aria-labelledby="featureModalLabel-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="featureModalLabel-1" class="modal-title text-center">App Feature and Benefit</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <figure class="figure col-lg-6 col-12">
+            <img class="img-fluid rounded" src="assets/images/features/feature-figure-1.png" alt="" />
+            <figcaption class="caption">Figure caption goes here </figcaption>
+          </figure>
+          <div class="content col-lg-6 col-12">
+            <p>You can use the modal to explain one of your app's features/benefits in details. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-star"></i>Lorem ipsum dolor sit ame</li>
+              <li><i class="fa fa-star"></i>Curabitur elit elit</li>
+              <li><i class="fa fa-star"></i>Nunc tincidunt ipsum a risus</li>
+            </ul>
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <blockquote class="quote">
+              <p><i class="fa fa-quote-left"></i>I love this magna pellentesque in magnis gravida sit augue felis vehicula vestibulum semper penatibus justo ornare semper Gravida felis platea arcu mus non. Montes at posuere. Natoque.</p>
+              <p class="people"><span class="name">Adam Lee</span><br><span class="title">Developer, AppHunt</span></p>
+            </blockquote>
+          </div><!--//content-->
+        </div><!--//row-->
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
+  </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+<!-- *****CONFIGURE STYLE (Remove on production site)****** -->
+<div class="config-wrapper">
+  <div class="config-wrapper-inner">
+    <a id="config-trigger" class="config-trigger" href="#"><i class="fa fa-cog"></i></a>
+    <div id="config-panel" class="config-panel">
+      <h5>Choose Colour</h5>
+      <ul id="color-options" class="list-unstyled list-inline">
+        <li class="theme-1 list-inline-item" ><a data-style="src/assets/css/styles.css" data-logo="src/assets/images/logo/logo.png" href="#"></a></li>
+        <li class="theme-2 list-inline-item"><a data-style="src/assets/css/styles-2.css" data-logo="src/assets/images/logo/logo-2.png" href="#"></a></li>
+        <li class="theme-3 list-inline-item"><a data-style="src/assets/css/styles-3.css" data-logo="src/assets/images/logo/logo-3.png" href="#"></a></li>
+        <li class="theme-4 list-inline-item"><a data-style="src/assets/css/styles-4.css" data-logo="src/assets/images/logo/logo-4.png" href="#"></a></li>
+
+        <li class="theme-5 list-inline-item"><a data-style="src/assets/css/styles-5.css" data-logo="src/assets/images/logo/logo-5.png" href="#"></a></li>
+
+        <li class="theme-6 list-inline-item"><a data-style="src/assets/css/styles-6.css" data-logo="src/assets/images/logo/logo-6.png" href="#"></a></li>
+        <li class="theme-7 list-inline-item"><a data-style="src/assets/css/styles-7.css" data-logo="src/assets/images/logo/logo-7.png" href="#"></a></li>
+        <li class="theme-8 list-inline-item"><a data-style="src/assets/css/styles-8.css" data-logo="src/assets/images/logo/logo-8.png" href="#"></a></li>
+
+        <li class="theme-9 list-inline-item"><a data-style="src/assets/css/styles-9.css" data-logo="src/assets/images/logo/logo-9.png" href="#"></a></li>
+        <li class="theme-10 list-inline-item"><a data-style="src/assets/css/styles-10.css" data-logo="src/assets/images/logo/logo-10.png" href="#"></a></li>
+
+      </ul><!--//color-options-->
+      <h5 class="device-title">Choose Device</h5>
+      <ul class="list-unstyled device-options">
+        <li><a href="index-2.html">iPhone Black</a></li>
+        <li><a href="iphone-white.html">iPhone White</a></li>
+        <li><a href="ipad-white.html">iPad White</a></li>
+        <li><a href="ipad-black.html">iPad Black</a></li>
+        <li><a href="android.html">Android</a></li>
+        <li><a href="iphone-landscape.html">iPhone Landscape <span class="badge badge-success">New</span></a></li>
+        <li><a href="android-landscape.html">Android Landscape <span class="badge badge-success">New</span></a></li>
+      </ul>
+      <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+    </div><!--//configure-panel-->
+  </div><!--//config-wrapper-inner-->
+</div><!--//config-wrapper-->
+
+<!--&lt;!&ndash; Javascript &ndash;&gt;-->
+<!--<script type="text/javascript" src="assets/plugins/jquery-3.2.1.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/popper.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>-->
+<!--<script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>-->
+<!--<script type="text/javascript" src="assets/js/main.js"></script>-->
+<!--&lt;!&ndash;[if !IE]>&ndash;&gt;-->
+<!--<script type="text/javascript" src="assets/js/animations.js"></script>-->
+<!--&lt;!&ndash;<![endif]&ndash;&gt;-->
+
 

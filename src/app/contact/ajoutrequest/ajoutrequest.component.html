@@ -1,0 +1,51 @@
+<section id="contact" class="contact section has-pattern">
+  <div class="container">
+    <h2 class="title text-center animated fadeInUp delayp1" style="opacity: 0;">Contact US</h2>
+    <div class="row text-center">
+      <div class="intro col-lg-6 col-12 ml-lg-auto mr-lg-auto animated fadeInUp delayp2" style="opacity: 0;">
+        <p>We’d love to hear from you. </p>
+        <ul class="list-unstyled contact-details">
+          <li><i class="fa fa-envelope"></i><a href="mailto:hello@website.com">hello@website.com</a></li>
+          <li><i class="fa fa-phone-square"></i>0800 123 456</li>
+        </ul>
+      </div>
+    </div><!--//row-->
+    <div class="row text-center">
+      <div class="contact-form col-lg-6 col-12 ml-lg-auto mr-lg-auto">
+        <form class="form">
+          <div class="form-group name">
+            <label class="sr-only" for="name">Nom</label>
+            <input id="name" type="text" class="form-control" placeholder="Name:" [(ngModel)]="request.name" name="name">
+          </div><!--//form-group-->
+          <div class="form-group email">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" class="form-control" placeholder="Email:" [(ngModel)]="request.Email" name="Email" >
+          </div><!--//form-group-->
+          <div class="form-group message">
+            <label class="sr-only" for="descrip">Message</label>
+            <textarea id="descrip" class="form-control" rows="6" placeholder="Message:" [(ngModel)]="request.descrip" name="descrip"></textarea>
+          </div><!--//form-group-->
+          <div class="form-group radio">
+            <label class="radio-material">
+              <input id="radio1" type="radio" [(ngModel)]="request.type" value="0" checked="" name="type">
+              <span class="outer"><span class="inner"></span></span> <h5 class="text-center animated fadeInUp " style="opacity: 0;">Organisme Privé</h5>
+            </label>
+            <label class="radio-material">
+              <input id="radio2" type="radio" [(ngModel)]="request.type" value="1" name="type">
+              <span class="outer"><span class="inner"></span></span><h5 class="text-center animated fadeInUp " style="opacity: 0;">Organisme Public (Univ)</h5>
+            </label>
+          </div>
+          <button (click)="add()" class="btn btn-lg btn-theme">Send Message</button>
+        </form><!--//form<!--name.value,Email.value,descrip.value,type.value-->
+      </div><!--//contact-form-->
+    </div><!--//row-->
+    <div class="text-center">
+      <ul class="social-icons list-inline">
+        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul><!--//social-icons-->
+    </div><!--//row-->
+  </div><!--//container-->
+</section>
